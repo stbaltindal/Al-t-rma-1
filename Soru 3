@@ -1,0 +1,7 @@
+a = 0
+for i in range (1,999):
+    b = 1
+    for c in range (1,i):
+        b *= c
+    a += 1/b
+print(a)
