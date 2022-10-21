@@ -1,9 +1,10 @@
-i = int(input("Bir sayı giriniz: "))
-a = 0
-for b in range(2,int(i**0.5)+1):
-    if i % b == 0:
-        a += 1
-if a == 0:
-    print(i,"asal bir sayıdır.")
+def asal_mi(x):
+    for i in range(2,int(x**0.5)+1):
+        if x % i == 0 :
+            return False
+    return True
+a = int(input("Bir sayı giriniz: "))
+if asal_mi(a):
+    print(a,"sayısı asaldır.")
 else:
-    print(i,"asal bir sayı değildir.")
+    print(a,"sayısı asal değildir.")
