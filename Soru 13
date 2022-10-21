@@ -1,0 +1,4 @@
+for i in range (10,100):
+    for a in range(10,100):
+        if int(str(i)+str(a)) == 11*(a+i):
+            print(i,a)
